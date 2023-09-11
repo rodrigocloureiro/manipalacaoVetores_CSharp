@@ -46,6 +46,24 @@
         ao usuário um índice (entre 0 e 4). O programa deve então mostrar o nome que está na posição correspondente a esse índice. */
         Console.WriteLine("\n3- Nome em Posição");
 
+        string[] nomes = new string[5];
+
+        Console.WriteLine("Informe 5 nomes:");
+
+        for (int i = 0; i < nomes.Length; i++)
+        {
+            nomes[i] = Console.ReadLine();
+        }
+
+        Console.WriteLine("********************");
+
+        Console.WriteLine("Informe um valor (índice) entre 0 e 4:");
+        int indice = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("********************");
+
+        Console.WriteLine(indice >= 0 && indice <= 4 ? $"{nomes[indice]}" : "Valor inválido!");
+
         /* 4- Cópia Invertida -> Escreva um programa que receba um array de 5 strings do usuário. Em seguida, copie esse array para
         outro, mas de forma invertida (o último elemento se torna o primeiro, o penúltimo se torna o segundo, e assim por diante).
         Mostra o array invertido na tela. */
