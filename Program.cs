@@ -26,6 +26,22 @@
         maior número dentro desse array. Não utilize funções prontas para essa finalidade. */
         Console.WriteLine("\n2- Menor e Maior Valor");
 
+        int[] arrNumeros = new int[4];
+        int maior = int.MinValue, menor = int.MaxValue;
+
+        Console.WriteLine("Informe 4 valores inteiros:");
+
+        for (int i = 0; i < arrNumeros.Length; i++)
+        {
+            arrNumeros[i] = int.Parse(Console.ReadLine());
+            if (arrNumeros[i] > maior) maior = arrNumeros[i];
+            if (arrNumeros[i] < menor) menor = arrNumeros[i];
+        }
+
+        Console.WriteLine("********************");
+
+        Console.WriteLine($"Maior: {maior}\nMenor: {menor}");
+
         /* 3- Nome em Posição -> Crie um programa onde o usuário informa 5 nomes. Após inserir todos os nomes, o programa deve pedir
         ao usuário um índice (entre 0 e 4). O programa deve então mostrar o nome que está na posição correspondente a esse índice. */
         Console.WriteLine("\n3- Nome em Posição");
