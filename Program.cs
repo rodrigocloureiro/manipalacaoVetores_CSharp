@@ -112,6 +112,29 @@
         números duplicados entre eles. */
         Console.WriteLine("\n6- Identificando números duplicados");
 
+        bool duplicado = false;
+        int[] arrNums = new int[10];
+
+        Console.WriteLine("Informe 10 números inteiros:");
+
+        for (int i = 0; i < arrNums.Length; i++)
+        {
+            arrNums[i] = int.Parse(Console.ReadLine());
+
+            for (int j = 0; j < i; j++)
+            {
+                if (arrNums[j] == arrNums[i])
+                {
+                    duplicado = true;
+                    break;
+                }
+            }
+        }
+
+        Console.WriteLine("********************");
+
+        Console.WriteLine(duplicado ? "Há números duplicados." : "Não há números duplicados.");
+
         Console.ReadKey();
     }
 }
