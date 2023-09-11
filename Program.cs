@@ -93,6 +93,21 @@
         as palavras. */
         Console.WriteLine("\n5- Contagem de Caracteres");
 
+        string[] palavras = new string[6];
+        int totalCaracteres = 0;
+
+        Console.WriteLine("Escreva 6 palavras:");
+
+        for (int i = 0; i < palavras.Length; i++)
+        {
+            palavras[i] = Console.ReadLine();
+            totalCaracteres += palavras[i].Length;
+        }
+
+        Console.WriteLine("********************");
+
+        Console.WriteLine($"Foram digitados um total de {totalCaracteres} caracteres");
+
         /* 6- Identificando números duplicados -> Escreva um programa que receba 10 números inteiros do usuário e indique se há
         números duplicados entre eles. */
         Console.WriteLine("\n6- Identificando números duplicados");
