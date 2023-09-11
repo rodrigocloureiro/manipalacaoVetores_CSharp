@@ -6,6 +6,22 @@
         inversa. */
         Console.WriteLine("1- Inversão de Array");
 
+        int[] numeros = new int[10];
+
+        Console.WriteLine("Informe 10 números inteiros:");
+
+        for (int i = 0; i < numeros.Length; i++)
+        {
+            numeros[i] = int.Parse(Console.ReadLine());
+        }
+
+        Console.WriteLine("********************");
+
+        for (int i = numeros.Length - 1; i >= 0; i--)
+        {
+            Console.WriteLine(numeros[i]);
+        }
+
         /* 2- Menor e Maior Valor -> Escreva um programa que recebe um array de números inteiros do usuário e determina o menor e o
         maior número dentro desse array. Não utilize funções prontas para essa finalidade. */
         Console.WriteLine("\n2- Menor e Maior Valor");
@@ -27,5 +43,7 @@
         /* 6- Identificando números duplicados -> Escreva um programa que receba 10 números inteiros do usuário e indique se há
         números duplicados entre eles. */
         Console.WriteLine("\n6- Identificando números duplicados");
+
+        Console.ReadKey();
     }
 }
