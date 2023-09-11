@@ -69,6 +69,25 @@
         Mostra o array invertido na tela. */
         Console.WriteLine("\n4- Cópia Invertida");
 
+        string[] arrStrings = new string[5];
+        string[] arrStringsInvertido = new string[5];
+
+        Console.WriteLine("Escreva 5 strings:");
+
+        for (int i = 0; i < arrStrings.Length; i++)
+        {
+            arrStrings[i] = Console.ReadLine();
+
+            arrStringsInvertido[(arrStringsInvertido.Length - 1) - i] = arrStrings[i];
+        }
+
+        Console.WriteLine("********************");
+
+        foreach (String invertido in arrStringsInvertido)
+        {
+            Console.WriteLine(invertido);
+        }
+
         /* 5- Contagem de Caracteres -> Peça ao usuário para inserir uma série de palavras (strings). Armazene essas palavras em um
         array e, em seguida, calcule e mostre quantos caracteres no total foram inseridos, somando todos os caracteres de todas
         as palavras. */
